@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import {
-     AiOutlineArrowDown,
-   } from "react-icons/ai";
+import { AiOutlineArrowDown } from "react-icons/ai";
+import Image from "next/image";
+import ClaridgeLogo from "../../images/claridgeLogo.jpg";
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -18,41 +18,57 @@ const Navbar: React.FC = () => {
     <nav className="bg-blue-500 p-4 w-full h-24">
       <motion.div className="flex justify-center items-center gap-10">
         <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-2xl">LOGO</motion.div>
+          <motion.div className="w-20 justify-start">
+               <Image src={ClaridgeLogo} alt={""} className="rounded" />
+          </motion.div>
         </Link>
         <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-2xl">Home</motion.div>
+          <motion.div className="text-white text-xl">Main Page</motion.div>
         </Link>
         <motion.div className="relative">
           <Link href={""}>
             <motion.div
               onClick={toggleDropdown}
-              className="flex flex-row text-white text-2xl focus:outline-none border-2 p-2 border-white rounded-md"
+              className="flex flex-row text-white text-xl focus:outline-none border-2 p-2 border-white rounded-md"
             >
-              Menu <AiOutlineArrowDown />
+              CSE <AiOutlineArrowDown />
             </motion.div>
           </Link>
           {isDropdownOpen && (
             <motion.div className="absolute right-0 mt-2 py-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg">
               <ul>
-                <li className="hover:bg-gray-400 px-4 py-2 text-black">
-                  Item 1
-                </li>
-                <li className="hover:bg-gray-400 px-4 py-2 text-black">
-                  Item 2
-                </li>
-                <li className="hover:bg-gray-400 px-4 py-2 text-black">
-                  Item 3
-                </li>
+                <Link href={""}>
+                  <li className="hover:bg-gray-400 px-4 py-2 text-black">
+                    Annual Report
+                  </li>
+                </Link>
+                <Link href={""}>
+                  {" "}
+                  <li className="hover:bg-gray-400 px-4 py-2 text-black">
+                    Item 2
+                  </li>
+                </Link>
+                <Link href={""}>
+                  <li className="hover:bg-gray-400 px-4 py-2 text-black">
+                    Announcements
+                  </li>
+                </Link>
+                <Link href={""}>
+                  <li className="hover:bg-gray-400 px-4 py-2 text-black">
+                    Interim Announcements
+                  </li>
+                </Link>
               </ul>
             </motion.div>
           )}
         </motion.div>
         <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-2xl">Home</motion.div>
+          <motion.div className="text-white text-xl">General Info</motion.div>
         </Link>
         <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-2xl">Home</motion.div>
+          <motion.div className="text-white text-xl">
+            Corporate Governance
+          </motion.div>
         </Link>
       </motion.div>
     </nav>
