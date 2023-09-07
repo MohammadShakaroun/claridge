@@ -15,8 +15,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-blue-500 p-4 w-full h-24">
-      <motion.div className="flex justify-center items-center gap-10">
+    <nav className="bg-blue-500 p-4 w-full h-24 ">
+      <motion.div className="flex justify-center items-center gap-10 xl:gap-20">
         <Link href={""} className="border-2 p-2 border-white rounded-md">
           <motion.div className="w-20 justify-start">
                <Image src={ClaridgeLogo} alt={""} className="rounded" />

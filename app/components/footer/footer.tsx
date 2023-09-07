@@ -1,11 +1,25 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { AiFillFacebook } from "react-icons/ai";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillTwitterCircle,
+  AiFillTwitterSquare,
+} from "react-icons/ai";
 
 function Footer() {
   return (
-    <motion.div className="w-full">
-      <div className="mx-auto px-4 bg-slate-600 p-10">
+    <motion.div
+      className="w-full"
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+    >
+      <motion.div className="mx-auto px-4 bg-slate-600 p-5">
+    <hr className="my-6 border-blueGray-300" />
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
             <h4 className="text-3xl fonat-semibold text-blueGray-700">
@@ -15,31 +29,16 @@ function Footer() {
               10 Georgiou Gennadiou Street, Agathangelos Court, 3rd floor 3041
               Limassol
             </h5>
-            <div className="mt-6 lg:mb-0 mb-6">
-              <button
-                className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <AiFillFacebook />
-              </button>
-              <button
-                className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <i className="fab fa-facebook-square"></i>
-              </button>
-              <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <i className="fab fa-dribbble"></i>
-              </button>
-              <button
-                className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <i className="fab fa-github"></i>
-              </button>
+            <div className="flex flex-row mt-6 lg:mb-0 mb-6">
+              <Link href={""}>
+                <AiFillFacebook className="shadow-lg h-10 w-10 items-center justify-center align-center hover:text-blue-500 rounded-full mr-2" />
+              </Link>
+              <Link href={""}>
+                <AiFillInstagram className="shadow-lg h-10 w-10 items-center justify-center align-center hover:text-blue-500 rounded-full mr-2" />
+              </Link>
+              <Link href={""}>
+                <AiFillTwitterSquare className="shadow-lg h-10 w-10 items-center justify-center align-center hover:text-blue-500 rounded-full mr-2" />
+              </Link>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
@@ -108,7 +107,7 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
