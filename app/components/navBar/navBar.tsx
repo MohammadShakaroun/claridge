@@ -23,13 +23,13 @@ const Navbar: React.FC = () => {
           </motion.div>
         </Link>
         <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-xl">Main Page</motion.div>
+          <motion.div className="text-white text-xl hover:text-slate-300">Main Page</motion.div>
         </Link>
         <motion.div className="relative">
           <Link href={""}>
             <motion.div
               onClick={toggleDropdown}
-              className="flex flex-row text-white text-xl focus:outline-none border-2 p-2 border-white rounded-md"
+              className="flex flex-row text-white text-xl focus:outline-none border-2 p-2 hover:text-slate-300 border-white rounded-md"
             >
               CSE <AiOutlineArrowDown />
             </motion.div>
@@ -63,10 +63,10 @@ const Navbar: React.FC = () => {
           )}
         </motion.div>
         <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-xl">General Info</motion.div>
+          <motion.div className="text-white text-xl hover:text-slate-300">General Info</motion.div>
         </Link>
         <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-xl">
+          <motion.div className="text-white text-xl hover:text-slate-300">
             Corporate Governance
           </motion.div>
         </Link>

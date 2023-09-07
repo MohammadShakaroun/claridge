@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { AiFillFacebook} from "react-icons/ai";
+import { AiFillFacebook } from "react-icons/ai";
 
 function Footer() {
   return (
-    <motion.div 
-    className="w-full"
-    >
+    <motion.div className="w-full">
       <div className="mx-auto px-4 bg-slate-600 p-10">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
@@ -14,14 +12,15 @@ function Footer() {
               Let's keep in touch!
             </h4>
             <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
-            10 Georgiou Gennadiou Street, Agathangelos Court, 3rd floor 3041 Limassol
+              10 Georgiou Gennadiou Street, Agathangelos Court, 3rd floor 3041
+              Limassol
             </h5>
             <div className="mt-6 lg:mb-0 mb-6">
               <button
                 className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <AiFillFacebook/>
+                <AiFillFacebook />
               </button>
               <button
                 className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
@@ -98,9 +97,7 @@ function Footer() {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-blueGray-500 font-semibold py-1">
-              Copyright © <span id="get-current-year">2023</span>
-                {" "}
-                Develop by {" "}
+              Copyright © <span id="get-current-year">2023</span> Develop by{" "}
               <Link
                 href="https://www.aetelco.com"
                 className="text-blueGray-500 hover:text-blue-600"
