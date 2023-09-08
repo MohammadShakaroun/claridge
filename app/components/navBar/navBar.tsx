@@ -15,15 +15,21 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-blue-500 p-4 w-full h-24 ">
-      <motion.div className="flex justify-center items-center gap-10 xl:gap-20">
-        <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="w-20 justify-start">
-               <Image src={ClaridgeLogo} alt={""} className="rounded" />
+    <nav className="bg-blue-500 p-4 w-full h-24">
+      <motion.div className="flex justify-center items-center sm:gap-4 xl:gap-20">
+        <Link href={"/"} className="border-2 p-2 border-white rounded-md">
+          <motion.div className="w-20 justify-start flex">
+            {/* <motion.div className="items-center justify-center flex-row mx-auto">Claridge</motion.div> */}
+            <Image src={ClaridgeLogo} alt={""} className="rounded-full" />
           </motion.div>
         </Link>
-        <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-xl hover:text-slate-300">Main Page</motion.div>
+        <Link
+          className="border-2 p-2 border-white rounded-md" href={"/"}        >
+          <motion.div
+            className="text-white text-xl hover:text-slate-300"
+          >
+            Main Page
+          </motion.div>
         </Link>
         <motion.div className="relative">
           <Link href={""}>
@@ -45,7 +51,7 @@ const Navbar: React.FC = () => {
                 <Link href={""}>
                   {" "}
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
-                    Item 2
+                    Test Item
                   </li>
                 </Link>
                 <Link href={""}>
@@ -63,7 +69,9 @@ const Navbar: React.FC = () => {
           )}
         </motion.div>
         <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-xl hover:text-slate-300">General Info</motion.div>
+          <motion.div className="text-white text-xl hover:text-slate-300">
+            General Info
+          </motion.div>
         </Link>
         <Link href={""} className="border-2 p-2 border-white rounded-md">
           <motion.div className="text-white text-xl hover:text-slate-300">

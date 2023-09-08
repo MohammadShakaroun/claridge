@@ -6,17 +6,16 @@ import {
   AiFillTwitterCircle,
   AiFillTwitterSquare,
 } from "react-icons/ai";
+import SubscriptionEmail from "../sendEmail/email"
 
 function Footer() {
   return (
     <motion.div
       className="w-full"
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 0.8,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.01],
-      }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{ duration: 1}}
     >
       <motion.div className="mx-auto px-4 bg-slate-600 p-5">
     <hr className="my-6 border-blueGray-300" />
@@ -29,7 +28,7 @@ function Footer() {
               10 Georgiou Gennadiou Street, Agathangelos Court, 3rd floor 3041
               Limassol
             </h5>
-            <div className="flex flex-row mt-6 lg:mb-0 mb-6">
+            <div className="flex flex-row mt-6 lg:mb-0 mb-6 items-center justify-center">
               <Link href={""}>
                 <AiFillFacebook className="shadow-lg h-10 w-10 items-center justify-center align-center hover:text-blue-500 rounded-full mr-2" />
               </Link>
@@ -45,49 +44,29 @@ function Footer() {
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-5/12 px-4 ml-auto">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                  Useful Links
+                  Useful Links:
                 </span>
                 <ul className="list-unstyled">
                   <li>
-                    <a
-                      className="text-blueGray-600 hover:text-blue-600 font-semibold block pb-2 text-sm"
+                    <Link
+                      className="text-blueGray-600 hover:text-secondary hover:underline font-semibold block pb-2 text-sm"
                       href="https://www.amathuslimassol.com/"
                     >
                       Amathus Hotels Rhodes
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className="text-blueGray-600 hover:text-blue-600 font-semibold block pb-2 text-sm"
+                    <Link
+                      className="text-blueGray-600 hover:text-secondary hover:underline font-semibold block pb-2 text-sm"
                       href="http://www.claridgepublic.com/"
                     >
                       Claridge Public Ltd
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="w-full lg:w-5/12 px-4">
-                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                  Other Resources
-                </span>
-                <ul className="list-unstyled">
-                  <li>
-                    <a
-                      className="text-blueGray-600 hover:text-blue-600 font-semibold block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
-                    >
-                      MIT License
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-blueGray-600 hover:text-blue-600 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/contact-us?ref=njs-profile"
-                    >
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
+              <SubscriptionEmail />
               </div>
             </div>
           </div>
@@ -99,11 +78,10 @@ function Footer() {
               Copyright © <span id="get-current-year">2023</span> Develop by{" "}
               <Link
                 href="https://www.aetelco.com"
-                className="text-blueGray-500 hover:text-blue-600"
+                className="text-blueGray-500 hover:text-secondary"
               >
-                AETELCO
+                AETELCO.
               </Link>
-              .
             </div>
           </div>
         </div>
