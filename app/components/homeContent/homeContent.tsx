@@ -8,13 +8,13 @@ import ClaridgeImg from "../../images/ClaridgeImg.jpg";
 const HomeContent = () => {
   return (
     <motion.div className="m-8">
-      <motion.div className=" flex md:flex-row flex-col w-full">
+      <motion.div className=" flex md:flex-row flex-col w-full z-40">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 1 }}
-          className=" bg-secondary p-4 shadow-sm md:w-1/2 items-center justify-center"
+          className=" p-4 shadow-sm md:w-1/2 items-center justify-center"
         >
           <WithAnimation
             initialX={"-100vw"}
@@ -26,11 +26,12 @@ const HomeContent = () => {
             visibleScale={1}
             initialY={0}
             visibleY={1}
+            height={0}
           >
-            <h2 className="text-4xl font-semibold md:w-4/5 mx-auto text-black">
+            <h2 className="text-4xl font-semibold lg:w-4/5 mx-auto text-black">
               Main activities:
             </h2>
-            <p className="mx-auto md:w-4/5 text-black lg:mt-10">
+            <p className="mx-auto lg:w-4/5 text-lg text-black lg:mt-10">
               The Company was incorporated with its headquarters in Cyprus as a
               public limited liability company in accordance with the provisions
               of the Companies Law, Chapter 113. The Company is registered on
@@ -40,7 +41,7 @@ const HomeContent = () => {
             </p>
           </WithAnimation>
         </motion.div>
-        <motion.div className="flex flex-row md:w-1/2 bg-secondary items-center justify-center">
+        <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
           <WithAnimation
             initialX={"100vw"}
             visibleX={0}
@@ -51,9 +52,10 @@ const HomeContent = () => {
             visibleScale={1}
             initialY={0}
             visibleY={1}
+            height={0}
           >
             <Image
-              className="rounded-md md:w-3/4 mx-auto"
+              className="rounded-full lg:w-3/4 mx-auto"
               objectFit="cover"
               alt=""
               src={ClaridgrWhiteTree}
@@ -62,7 +64,7 @@ const HomeContent = () => {
         </motion.div>
       </motion.div>
       <motion.div className=" flex md:flex-row flex-col-reverse w-full items-center justify-center mx-auto">
-        <motion.div className="flex flex-row md:w-1/2 bg-secondary items-center justify-center">
+        <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
           <WithAnimation
             initialX={"-100vw"}
             visibleX={0}
@@ -73,9 +75,10 @@ const HomeContent = () => {
             visibleScale={1}
             initialY={0}
             visibleY={1}
+            height={0}
           >
             <Image
-              className="rounded md:w-3/4 mx-auto"
+              className="rounded-full lg:w-3/4 mx-auto"
               objectFit="cover"
               alt=""
               src={ClaridgeImg}
@@ -87,7 +90,7 @@ const HomeContent = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 1 }}
-          className=" bg-secondary p-4 shadow-sm md:w-1/2 items-center justify-center"
+          className="p-4 shadow-sm md:w-1/2 items-center justify-center"
         >
           <WithAnimation
             initialX={"100vw"}
@@ -99,8 +102,9 @@ const HomeContent = () => {
             visibleScale={1}
             initialY={0}
             visibleY={1}
+            height={0}
           >
-            <p className="mx-auto md:w-4/5 text-black">
+            <p className="mx-auto lg:w-4/5 text-lg text-black">
               The Company owns 100% of the share capital of Amathus Vacation
               Ownership Limited (“the Subsidiary”) whose principal activity is
               the construction of luxury villas and apartments and their

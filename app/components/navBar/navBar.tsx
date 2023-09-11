@@ -15,12 +15,12 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-blue-500 p-4 fixed w-full h-24 z-40">
+    <nav className="bg-blue-500 p-4 relative w-full h-24">
       <motion.div className="flex justify-center items-center sm:gap-4 xl:gap-20">
-        <Link href={"/"} className="md:border-2 p-2 border-white rounded-md">
-          <motion.div className=" w-16 justify-start flex">
+        <Link href={"/home"} className="md:border-2 p-2 border-white rounded-md">
+          <motion.div className=" w-16">
             {/* <motion.div className="items-center justify-center flex-row mx-auto">Claridge</motion.div> */}
-            <Image src={ClaridgeLogo} alt={""} className="rounded-full" />
+            <Image src={ClaridgeLogo} alt={""} className="rounded-xl" />
           </motion.div>
         </Link>
         <Link
@@ -34,30 +34,24 @@ const Navbar: React.FC = () => {
         <motion.div className="relative">
             <motion.div
               onClick={toggleDropdown}
-              className="flex flex-row text-white md:text-xl focus:outline-none border-2 p-2 hover:text-slate-300 border-white rounded-md"
+              className="flex flex-row text-white md:text-xl focus:outline-none border-2 p-2 hover:text-slate-300 border-white rounded-md cursor-pointer"
             >
-              CSE <AiOutlineArrowDown className="mt-1"/>
+              CSE {" "}<AiOutlineArrowDown className="mt-1"/>
             </motion.div>
           {isDropdownOpen && (
-            <motion.div className="relative right-0 mt-2 py-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg">
+            <motion.div className="relative right-0 mt-2 py-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg z-40">
               <ul>
                 <Link href={"/annual-report"}>
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Annual Report
                   </li>
                 </Link>
-                <Link href={"/"}>
-                  {" "}
-                  <li className="hover:bg-gray-400 px-4 py-2 text-black">
-                    Test Item
-                  </li>
-                </Link>
-                <Link href={"annoucements"}>
+                <Link href={"annoucement"}>
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Announcements
                   </li>
                 </Link>
-                <Link href={"/interim-annoucements"}>
+                <Link href={"/interim-annoucement"}>
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Interim Announcements
                   </li>

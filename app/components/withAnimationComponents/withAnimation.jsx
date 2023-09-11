@@ -12,6 +12,7 @@ export const WithAnimation = ({
   duration,
   delay,
   width,
+  height
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -28,6 +29,7 @@ export const WithAnimation = ({
       ref={ref}
       style={{
         width,
+        height
       }}
     >
       <motion.div

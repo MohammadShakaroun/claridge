@@ -16,7 +16,7 @@ const CorporteGov = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 1 }}
-          className=" bg-secondary p-4 shadow-sm md:w-1/2 items-center justify-center mx-auto"
+          className=" p-4 shadow-sm md:w-1/2 items-center justify-center mx-auto"
         >
           <WithAnimation
             initialX={"-100vw"}
@@ -28,8 +28,8 @@ const CorporteGov = () => {
             visibleScale={1}
             initialY={0}
             visibleY={1}
-          >
-            <h2 className="text-xl font-semibold w-4/5 mx-auto text-black">
+            height={undefined}          >
+            <h2 className="text-xl font-semibold lg:w-4/5 mx-auto text-black">
               Corporate Governance Report for the year 2010
             </h2>
             <p className="mx-auto text-black lg:mt-10 w-4/5">
@@ -42,9 +42,9 @@ const CorporteGov = () => {
             </p>
           </WithAnimation>
         </motion.div>
-        <motion.div className="flex flex-row md:w-1/2 bg-secondary items-center justify-center">
+        <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
           <Image
-            className="rounded-md md:w-3/4 mx-auto"
+            className="rounded-2xl lg:w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={CorporateMeeting}
@@ -52,9 +52,9 @@ const CorporteGov = () => {
         </motion.div>
       </motion.div>
       <motion.div className="flex md:flex-row flex-col-reverse w-full items-center justify-center mx-auto">
-        <motion.div className="flex flex-row md:w-1/2 bg-secondary items-center justify-center">
+        <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
           <Image
-            className="rounded w-3/4 mx-auto"
+            className="rounded-2xl md:w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={CorporateGov}
@@ -65,7 +65,7 @@ const CorporteGov = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 1 }}
-          className=" bg-secondary p-4 shadow-sm md:w-1/2 items-center justify-center"
+          className="p-4 shadow-sm md:w-1/2 items-center justify-center"
         >
           <WithAnimation
             initialX={"100vw"}
@@ -77,8 +77,8 @@ const CorporteGov = () => {
             visibleScale={1}
             initialY={0}
             visibleY={1}
-          >
-            <p className="mx-auto w-4/5 text-black">
+            height={undefined}          >
+            <p className="mx-auto lg:w-4/5 text-black">
               Ensuring the quorum of council members necessary for the conduct
               of its work allowing enough time for constructive discussion of
               all items on the agenda coverage of all agenda items that are
@@ -93,7 +93,7 @@ const CorporteGov = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 1 }}
-          className=" bg-secondary p-4 shadow-sm md:w-1/2 items-center justify-center"
+          className="p-4 shadow-sm md:w-1/2 items-center justify-center"
         >
           <WithAnimation
             initialX={"-100vw"}
@@ -105,11 +105,11 @@ const CorporteGov = () => {
             visibleScale={1}
             initialY={0}
             visibleY={1}
-          >
+            height={undefined}          >
             <h2 className="text-xl font-semibold w-4/5 mx-auto text-black">
               {" "}
             </h2>
-            <p className="mx-auto w-4/5 text-black lg:mt-10">
+            <p className="mx-auto lg:w-4/5 text-black lg:mt-10">
               The Board of Directors operates based on the principle of
               collective responsibility and no category of its members is
               differentiated in terms of responsibility towards the Company and
@@ -118,9 +118,9 @@ const CorporteGov = () => {
             </p>
           </WithAnimation>
         </motion.div>
-        <motion.div className="flex flex-row md:w-1/2 bg-secondary items-center justify-center">
+        <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
           <Image
-            className="rounded-md md:w-3/4 mx-auto"
+            className="rounded-2xl md:w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={Council}
@@ -128,9 +128,9 @@ const CorporteGov = () => {
         </motion.div>
       </motion.div>
       <motion.div className="flex md:flex-row flex-col-reverse w-full items-center justify-center mx-auto">
-        <motion.div className="flex flex-row md:w-1/2 bg-secondary items-center justify-center">
+        <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
           <Image
-            className="rounded w-3/4 mx-auto"
+            className="rounded-2xl w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={BoardOfDirectors}
@@ -141,7 +141,7 @@ const CorporteGov = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 1 }}
-          className=" bg-secondary p-4 shadow-sm md:w-1/2 items-center justify-center"
+          className="p-4 shadow-sm md:w-1/2 items-center justify-center"
         >
           <WithAnimation
             initialX={"100vw"}
@@ -153,8 +153,8 @@ const CorporteGov = () => {
             visibleScale={1}
             initialY={0}
             visibleY={1}
-          >
-            <p className="mx-auto w-4/5 text-black">
+            height={undefined}          >
+            <p className="mx-auto lg:w-4/5 text-black">
               The Board of Directors consists of one (1) Executive and nine (9)
               Non-Executive Directors of which two (2) are Independent. The
               names and status of the Company's Directors as of December 31,

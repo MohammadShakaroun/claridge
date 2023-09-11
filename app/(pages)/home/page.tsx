@@ -8,7 +8,7 @@ import HomeImage from "@/app/components/homeImage/homeImage"
 
 function Home() {
   return (
-    <motion.div className="bg-secondary">
+    <motion.div className="bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400">
     <Navbar />
     <HomeImage />
     <HomePage />

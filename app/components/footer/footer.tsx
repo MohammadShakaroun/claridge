@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   AiFillFacebook,
   AiFillInstagram,
-  AiFillTwitterCircle,
   AiFillTwitterSquare,
 } from "react-icons/ai";
 import SubscriptionEmail from "../sendEmail/email"
@@ -24,7 +23,7 @@ function Footer() {
             <h4 className="text-3xl fonat-semibold text-blueGray-700">
               Let's keep in touch!
             </h4>
-            <Link href={""}><h5 className="text-lg mt-0 mb-2 text-blueGray-600">
+            <Link href={"https://goo.gl/maps/hnG9GWr1MQtwR2KV8"}><h5 className="text-lg mt-0 mb-2 hover:underline hover:text-blue-500">
               10 Georgiou Gennadiou Street, Agathangelos Court, 3rd floor 3041
               Limassol
             </h5>
@@ -43,14 +42,14 @@ function Footer() {
           </div>
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full lg:w-5/12 px-4 ml-auto">
+              <div className="w-full lg:w-5/12 px-4 md:mx-auto">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                   Useful Links:
                 </span>
                 <ul className="list-unstyled mx-auto">
                   <li>
                     <Link
-                      className="text-blueGray-600 hover:text-secondary hover:underline font-semibold block pb-2 text-sm"
+                      className="text-blueGray-600 hover:text-blue-500 hover:underline font-semibold block pb-2 text-sm"
                       href="https://www.amathuslimassol.com/"
                     >
                       Amathus Hotels Rhodes
@@ -58,7 +57,7 @@ function Footer() {
                   </li>
                   <li>
                     <Link
-                      className="text-blueGray-600 hover:text-secondary hover:underline font-semibold block pb-2 text-sm"
+                      className="text-blueGray-600 hover:text-blue-500 hover:underline font-semibold block pb-2 text-sm"
                       href="http://www.claridgepublic.com/"
                     >
                       Claridge Public Ltd
@@ -66,7 +65,7 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-col lg:w-5/12">
+              <div className="flex flex-col lg:w-full">
               <SubscriptionEmail />
               </div>
             </div>

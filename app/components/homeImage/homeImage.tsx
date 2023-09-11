@@ -6,7 +6,7 @@ import { WithAnimation } from "../withAnimationComponents/withAnimation";
 
 function HomePage() {
   return (
-    <motion.div className="w-full bg-secondary items-center justify-center mx-auto">
+    <motion.div className="w-full bg-gradient-to-r from-violet-200 to-fuchsia-400 items-center justify-center mx-auto">
       <WithAnimation
         initialX={0}
         visibleX={0}
@@ -17,7 +17,7 @@ function HomePage() {
         initialScale={1}
         visibleScale={1}
         width={"100%"}
-      >
+        height={"100%"}      >
         {" "}
         <Image
           src={ClaridgeEnter}
