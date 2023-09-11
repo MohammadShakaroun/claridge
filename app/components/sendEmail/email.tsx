@@ -52,7 +52,7 @@ const Email = () => {
               type='email'
               required
               name='email'
-              className=' bg-primary px-2 py-2 text-sm sm:w-72 w-3/4 text-white font-medium  rounded  outline-none border border-gray-300'
+              className=' bg-primary px-2 py-2 text-sm w-11/12 sm:w-96 text-white font-medium  rounded  outline-none border border-gray-300'
             />
             <button
               disabled={isLoading}

@@ -24,10 +24,11 @@ function Footer() {
             <h4 className="text-3xl fonat-semibold text-blueGray-700">
               Let's keep in touch!
             </h4>
-            <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
+            <Link href={""}><h5 className="text-lg mt-0 mb-2 text-blueGray-600">
               10 Georgiou Gennadiou Street, Agathangelos Court, 3rd floor 3041
               Limassol
             </h5>
+            </Link>
             <div className="flex flex-row mt-6 lg:mb-0 mb-6 items-center justify-center">
               <Link href={""}>
                 <AiFillFacebook className="shadow-lg h-10 w-10 items-center justify-center align-center hover:text-blue-500 rounded-full mr-2" />
@@ -46,7 +47,7 @@ function Footer() {
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                   Useful Links:
                 </span>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled mx-auto">
                   <li>
                     <Link
                       className="text-blueGray-600 hover:text-secondary hover:underline font-semibold block pb-2 text-sm"
@@ -65,7 +66,7 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="w-full lg:w-5/12 px-4">
+              <div className="flex flex-col lg:w-5/12">
               <SubscriptionEmail />
               </div>
             </div>

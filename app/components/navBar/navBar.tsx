@@ -15,51 +15,49 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-blue-500 p-4 w-full h-24">
+    <nav className="bg-blue-500 p-4 fixed w-full h-24 z-40">
       <motion.div className="flex justify-center items-center sm:gap-4 xl:gap-20">
-        <Link href={"/"} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="w-20 justify-start flex">
+        <Link href={"/"} className="md:border-2 p-2 border-white rounded-md">
+          <motion.div className=" w-16 justify-start flex">
             {/* <motion.div className="items-center justify-center flex-row mx-auto">Claridge</motion.div> */}
             <Image src={ClaridgeLogo} alt={""} className="rounded-full" />
           </motion.div>
         </Link>
         <Link
-          className="border-2 p-2 border-white rounded-md" href={"/"}        >
+          className="md:border-2 p-2 border-white rounded-md" href={"/home"}        >
           <motion.div
-            className="text-white text-xl hover:text-slate-300"
+            className="text-white md:text-xl hover:text-slate-300"
           >
             Main Page
           </motion.div>
         </Link>
         <motion.div className="relative">
-          <Link href={""}>
             <motion.div
               onClick={toggleDropdown}
-              className="flex flex-row text-white text-xl focus:outline-none border-2 p-2 hover:text-slate-300 border-white rounded-md"
+              className="flex flex-row text-white md:text-xl focus:outline-none border-2 p-2 hover:text-slate-300 border-white rounded-md"
             >
-              CSE <AiOutlineArrowDown />
+              CSE <AiOutlineArrowDown className="mt-1"/>
             </motion.div>
-          </Link>
           {isDropdownOpen && (
-            <motion.div className="absolute right-0 mt-2 py-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg">
+            <motion.div className="relative right-0 mt-2 py-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg">
               <ul>
-                <Link href={""}>
+                <Link href={"/annual-report"}>
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Annual Report
                   </li>
                 </Link>
-                <Link href={""}>
+                <Link href={"/"}>
                   {" "}
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Test Item
                   </li>
                 </Link>
-                <Link href={""}>
+                <Link href={"annoucements"}>
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Announcements
                   </li>
                 </Link>
-                <Link href={""}>
+                <Link href={"/interim-annoucements"}>
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Interim Announcements
                   </li>
@@ -68,13 +66,13 @@ const Navbar: React.FC = () => {
             </motion.div>
           )}
         </motion.div>
-        <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-xl hover:text-slate-300">
+        <Link href={"/general-info"} className="md:border-2 p-2 border-white rounded-md">
+          <motion.div className="text-white md:text-xl hover:text-slate-300">
             General Info
           </motion.div>
         </Link>
-        <Link href={""} className="border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white text-xl hover:text-slate-300">
+        <Link href={"/corporate-gov"} className="md:border-2 p-2 border-white rounded-md">
+          <motion.div className="text-white md:text-xl hover:text-slate-300">
             Corporate Governance
           </motion.div>
         </Link>

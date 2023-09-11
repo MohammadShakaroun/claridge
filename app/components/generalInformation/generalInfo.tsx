@@ -3,17 +3,18 @@ import { motion } from "framer-motion";
 import { WithAnimation } from "../withAnimationComponents/withAnimation";
 import Image from "next/image";
 import ClaridgeDirector from "../../images/claridgedirector.jpg";
+import ClaridgeFlair from "../../images/Claridgesflair.jpg"
 
-const GeneralInfo = () => {
+const GeneralInfos = () => {
   return (
-    <motion.div className="">
+    <motion.div className="m-8">
       <motion.div className="flex md:flex-row flex-col w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 1 }}
-          className=" bg-secondary p-4 mx-auto items-center justify-center"
+          className=" bg-secondary p-4 shadow-sm md:w-1/2 items-center justify-center"
         >
           <WithAnimation
             initialX={"-100vw"}
@@ -26,14 +27,15 @@ const GeneralInfo = () => {
             initialY={0}
             visibleY={1}
           >
-            <h2 className="text-xl font-semibold w-full mx-auto text-black">
+            <h2 className="text-3xl text-center font-semibold lg:w-full md:w-4/5 mx-auto text-black underline">
               General Information
             </h2>
-            <p className="mx-auto w-full items-center justify-center text-black">
-              Board of Directors and other officers
+            <p className="mt-5 md:w-4/5 text-black justify-end lg:mt-10" >
+             <span className="text-xl font-medium">Board of Directors and other officers.</span> 
               <br />
-              DIRECTORS
+              <span className="text-2xl font-semibold">DIRECTORS:</span>
               <br />
+              <span className="">
               Vasiliou Andreas - DIRECTOR <br />
               Laniti Tzoanna - DIRECTOR <br />
               Lanitis Platon E. - DIRECTOR <br />
@@ -41,25 +43,26 @@ const GeneralInfo = () => {
               Solomonides Demetris - DIRECTOR <br />
               Charitou Costas - DIRECTOR <br />
               Hadjikyriacos Michalis - DIRECTOR <br />
+              </span>
             </p>
           </WithAnimation>
         </motion.div>
-        <motion.div className="flex flex-row md:w-1/2 bg-secondary ">
+        <motion.div className="flex flex-row md:w-1/2 bg-secondary items-center justify-center">
           <Image
-            className="rounded w-1/2 mx-auto"
+            className="rounded-md md:w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={ClaridgeDirector}
           />
         </motion.div>
       </motion.div>
-      <motion.div className="flex md:flex-col bg-secondary items-center justify-center">
-        <motion.div className="flex md:flex-row md:w-1/2 bg-secondary items-center justify-center">
+      <motion.div className="flex md:flex-row flex-col-reverse w-full items-center justify-center mx-auto">
+        <motion.div className="flex flex-row md:w-1/2 bg-secondary items-center justify-center">
           <Image
-            className="rounded w-1/2 mx-auto"
+            className="rounded md:w-3/4 mx-auto"
             objectFit="cover"
             alt=""
-            src={ClaridgeDirector}
+            src={ClaridgeFlair}
           />
         </motion.div>
         <motion.div
@@ -67,7 +70,7 @@ const GeneralInfo = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 1 }}
-          className=" bg-secondary p-4 md:w-1/2 items-center justify-center"
+          className=" bg-secondary p-4 shadow-sm md:w-1/2 items-center justify-center"
         >
           <WithAnimation
             initialX={"100vw"}
@@ -80,12 +83,12 @@ const GeneralInfo = () => {
             initialY={0}
             visibleY={1}
           >
-            <p className="mx-auto w-full text-black">
-              COMPANY SECRETARY <br />
+            <p className="mx-auto md:w-4/5 text-black">
+            <span className="text-2xl font-medium">COMPANY SECRETARY:</span><br />
               P & D Secretarial Services Limited 10 Georgios Gennadiou Street,
-              Agathangelos Court, 3rd floor 3041 Limassol
+              Agathangelos Court, 3rd floor 3041 Limassol.
               <br />
-              REGISTERED OFFICE <br />
+              <span className="text-2xl font-medium">REGISTERED OFFICE:</span><br />
               10 Georgiou Gennadiou Street, Agathangelos Court, 3rd floor 3041
               Limassol Shareholders holding more than 5% of the Company's
               capital On April 24, 2010 the following shareholders owned more
@@ -100,4 +103,4 @@ const GeneralInfo = () => {
   );
 };
 
-export default GeneralInfo;
+export default GeneralInfos;

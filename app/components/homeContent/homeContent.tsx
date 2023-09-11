@@ -27,10 +27,10 @@ const HomeContent = () => {
             initialY={0}
             visibleY={1}
           >
-            <h2 className="text-xl font-semibold w-1/2 mx-auto text-black">
+            <h2 className="text-4xl font-semibold md:w-4/5 mx-auto text-black">
               Main activities:
             </h2>
-            <p className="mx-auto w-full text-black">
+            <p className="mx-auto md:w-4/5 text-black lg:mt-10">
               The Company was incorporated with its headquarters in Cyprus as a
               public limited liability company in accordance with the provisions
               of the Companies Law, Chapter 113. The Company is registered on
@@ -75,7 +75,7 @@ const HomeContent = () => {
             visibleY={1}
           >
             <Image
-              className="rounded w-3/4 mx-auto"
+              className="rounded md:w-3/4 mx-auto"
               objectFit="cover"
               alt=""
               src={ClaridgeImg}
@@ -100,7 +100,7 @@ const HomeContent = () => {
             initialY={0}
             visibleY={1}
           >
-            <p className="mx-auto w-full text-black ">
+            <p className="mx-auto md:w-4/5 text-black">
               The Company owns 100% of the share capital of Amathus Vacation
               Ownership Limited (“the Subsidiary”) whose principal activity is
               the construction of luxury villas and apartments and their
