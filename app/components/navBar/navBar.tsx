@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
         <motion.div className="relative">
             <motion.div
               onClick={toggleDropdown}
-              className="flex flex-row text-white md:text-xl focus:outline-none border-2 p-3 hover:text-slate-300 border-white rounded-md cursor-pointer"
+              className="flex flex-row text-white md:text-xl focus:outline-none border-2 p-3 sm:p-2 hover:text-slate-300 border-white rounded-md cursor-pointer"
             >
               CSE {" "}<AiOutlineArrowDown className="mt-1"/>
             </motion.div>
