@@ -31,7 +31,7 @@ const HomeContent = () => {
             <h2 className="text-3xl text-center font-semibold lg:w-full  mx-auto text-black underline">
               Country of incorporation
             </h2>
-            <p className="mt-5 lg:w-4/5 text-black lg:mt-10 mx-auto">
+            <p className="mx-auto lg:w-3/5 text-black lg:mt-10">
               The Company was incorporated with its seat in Cyprus as a public
               limited liability company in accordance with the provisions of the
               Companies Law, Chapter 113. The Company is registered on the
