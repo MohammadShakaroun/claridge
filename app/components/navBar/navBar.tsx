@@ -15,17 +15,17 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-blue-500 p-4 relative w-full h-24">
-      <motion.div className="flex justify-center items-center sm:gap-4 xl:gap-20">
-        <Link href={"/home"} className="md:border-2 p-2 border-white rounded-md">
-          <motion.div className=" w-16">
+      <motion.div className="flex justify-center items-center sm:gap-4 xl:gap-20 gap-2 w-full">
+        <Link href={"/home"} className="hidden sm:block md:border-2 p-2 border-white rounded-md">
+          <motion.div className=" w-16 cursor-pointer">
             {/* <motion.div className="items-center justify-center flex-row mx-auto">Claridge</motion.div> */}
             <Image src={ClaridgeLogo} alt={""} className="rounded-xl" />
           </motion.div>
         </Link>
         <Link
-          className="md:border-2 p-2 border-white rounded-md" href={"/home"}        >
+          className="" href={"/home"}        >
           <motion.div
-            className="text-white md:text-xl hover:text-slate-300"
+            className="border-2 p-2 border-white rounded-md text-white md:text-xl hover:text-slate-300"
           >
             Main Page
           </motion.div>
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
         <motion.div className="relative">
             <motion.div
               onClick={toggleDropdown}
-              className="flex flex-row text-white md:text-xl focus:outline-none border-2 p-2 hover:text-slate-300 border-white rounded-md cursor-pointer"
+              className="flex flex-row text-white md:text-xl focus:outline-none border-2 p-3 hover:text-slate-300 border-white rounded-md cursor-pointer"
             >
               CSE {" "}<AiOutlineArrowDown className="mt-1"/>
             </motion.div>
@@ -59,13 +59,13 @@ const Navbar: React.FC = () => {
             </motion.div>
           )}
         </motion.div>
-        <Link href={"./general-info"} className="md:border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white md:text-xl hover:text-slate-300">
+        <Link href={"./general-info"} className="">
+          <motion.div className="border-2 p-2 border-white rounded-md text-white md:text-xl hover:text-slate-300">
             General Info
           </motion.div>
         </Link>
-        <Link href={"./corporate-gov"} className="md:border-2 p-2 border-white rounded-md">
-          <motion.div className="text-white md:text-xl hover:text-slate-300">
+        <Link href={"./corporate-gov"} className="">
+          <motion.div className="border-2 p-2 border-white rounded-md text-white md:text-xl hover:text-slate-300">
             Corporate Governance
           </motion.div>
         </Link>

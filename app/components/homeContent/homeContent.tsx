@@ -1,5 +1,5 @@
-import * as React from 'react';
-import {motion} from "framer-motion";
+import * as React from "react";
+import { motion } from "framer-motion";
 import { WithAnimation } from "../withAnimationComponents/withAnimation";
 import Image from "next/image";
 import ClaridgeImg from "../../images/ClaridgeImg.jpg";
@@ -31,18 +31,18 @@ const HomeContent = () => {
             <h2 className="text-3xl text-center font-semibold lg:w-full  mx-auto text-black underline">
               Country of incorporation
             </h2>
-            <p className="mt-5 lg:w-4/5 text-black justify-end lg:mt-10 mx-auto text-center">
-                The Company was incorporated with its seat in Cyprus as a public
-                limited liability company in accordance with the provisions of
-                the Companies Law, Chapter 113. The Company is registered on the
-                Cyprus Stock Exchange in accordance with the Securities and
-                Cyprus Stock Exchange Laws and Regulations. Its registered
-                office is at 10 Georgiou Gennadiou Street, Limassol.
+            <p className="mt-5 lg:w-4/5 text-black lg:mt-10 mx-auto">
+              The Company was incorporated with its seat in Cyprus as a public
+              limited liability company in accordance with the provisions of the
+              Companies Law, Chapter 113. The Company is registered on the
+              Cyprus Stock Exchange in accordance with the Securities and Cyprus
+              Stock Exchange Laws and Regulations. Its registered office is at
+              10 Georgiou Gennadiou Street, Limassol.
             </p>
           </WithAnimation>
         </motion.div>
         <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
-        <WithAnimation
+          <WithAnimation
             initialX={"-100vh"}
             visibleX={0}
             duration={1.5}
@@ -55,17 +55,17 @@ const HomeContent = () => {
             height={undefined}
           >
             <Image
-            className="rounded-full lg:w-3/4 mx-auto"
-            objectFit="cover"
-            alt=""
-            src={ClaridgeImg}
-          />
+              className="rounded-full lg:w-3/4 mx-auto"
+              objectFit="cover"
+              alt=""
+              src={ClaridgeImg}
+            />
           </WithAnimation>
         </motion.div>
       </motion.div>
       <motion.div className="flex md:flex-row flex-col-reverse w-full items-center justify-center mx-auto">
         <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
-        <WithAnimation
+          <WithAnimation
             initialX={"100vh"}
             visibleX={0}
             duration={1.5}
@@ -78,11 +78,11 @@ const HomeContent = () => {
             height={undefined}
           >
             <Image
-            className=" rounded-full lg:w-3/4 mx-auto"
-            objectFit="cover"
-            alt=""
-            src={ClaridgeWhite}
-          />
+              className=" rounded-full lg:w-3/4 mx-auto"
+              objectFit="cover"
+              alt=""
+              src={ClaridgeWhite}
+            />
           </WithAnimation>
         </motion.div>
         <motion.div
@@ -104,8 +104,10 @@ const HomeContent = () => {
             visibleY={1}
             height={undefined}
           >
+            <h2 className="lg:w-full text-3xl font-semibold text-center text-black underline mx-auto">
+              Main activities
+            </h2>
             <p className="mx-auto lg:w-4/5 text-black">
-              <h2 className="lg:w-full text-3xl font-semibold text-center underline mx-auto">Main activities</h2>
               <br />
               The Company owns 100% of the share capital of Amathus Vacation
               Ownership Limited (“the Subsidiary”) whose principal activity is
