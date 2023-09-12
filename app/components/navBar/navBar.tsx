@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import Image from "next/image";
-import ClaridgeLogo from "../../images/claridgeLogo.jpg";
+import ClaridgeLogo from "@/app/images/claridgelogo.jpg";
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
