@@ -28,7 +28,7 @@ function GeneralInfos() {
           <Image
             src={GeneralImage}
             alt={""}
-            className="w-full lg:h-2/5 rounded-md"
+            className="w-full lg:h-2/5"
           />
         </WithAnimation>
       </motion.div>
