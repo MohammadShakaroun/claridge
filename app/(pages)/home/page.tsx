@@ -28,7 +28,7 @@ function Home() {
           <Image
             src={ClaridgeHotels}
             alt={""}
-            className="w-full lg:h-96 rounded-md"
+            className="w-full lg:h-96"
           />
         </WithAnimation>
       </motion.div>
