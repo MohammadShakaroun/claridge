@@ -105,7 +105,7 @@ const HomeContent = () => {
             height={undefined}
           >
             <p className="mx-auto lg:w-4/5 text-black">
-              <span className="text-2xl font-medium">Main activities</span>
+              <h2 className="lg:w-full text-3xl font-semibold text-center underline mx-auto">Main activities</h2>
               <br />
               The Company owns 100% of the share capital of Amathus Vacation
               Ownership Limited (“the Subsidiary”) whose principal activity is
