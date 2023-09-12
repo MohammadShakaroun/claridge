@@ -6,7 +6,7 @@ import Annoucements from "@/app/components/cse/annoucement/annoucement"
 
 function Annoucement() {
   return (
-    <div className="w-full bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 ">
+    <div className="min-h-screen flex flex-col bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 ">
     <Navbar />
     <Annoucements />
     <Footer />

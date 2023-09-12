@@ -6,7 +6,7 @@ import InterimAnnoucement from "@/app/components/cse/interimAnnoucement/interimA
 
 function InterimAnn() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 ">
+    <div className="w-full h-screen bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 ">
     <Navbar />
     <InterimAnnoucement />
     <Footer />

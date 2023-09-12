@@ -5,7 +5,7 @@ import Link from "next/link";
 function InterimAnnoucement() {
   const mainControls = useAnimation();
   return (
-     <motion.div className="flex flex-col w-full h-full bg-gradient-to-r from-sky-400 to-fuchsia-500">
+     <motion.div className="flex flex-col w-full h-96 bg-gradient-to-r from-sky-400 to-fuchsia-500">
       <motion.h1 className="text-center text-4xl font-extrabold p-10">
         Annual report
       </motion.h1>

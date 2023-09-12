@@ -7,9 +7,9 @@ import HomeContent from "./components/homeContent/homeContent"
 
 export default function Home() {
   return (
-    <main className="flex bg-gradient-to-r from-violet-400 to-fuchsia-400  min-h-screen flex-col items-center justify-between">
+    <main className="min-h-screen flex flex-col bg-gradient-to-r from-violet-400 to-fuchsia-400">
      <NavBar />
-     <HomePage />
+     {/* <HomePage /> */}
      <HomeContent />
      <Footer />
     </main>

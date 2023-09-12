@@ -15,7 +15,7 @@ function Gov() {
         visibleX={0.5}
         duration={0.2}
         delay={0.3}
-        initialY={"50vh"}
+        initialY={"-50vh"}
         visibleY={0}
         initialScale={1}
         visibleScale={1}

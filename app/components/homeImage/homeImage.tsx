@@ -6,8 +6,8 @@ import { WithAnimation } from "../withAnimationComponents/withAnimation";
 
 function HomePage() {
   return (
-    <motion.div className="w-full bg-gradient-to-r from-violet-200 to-fuchsia-400 items-center justify-center mx-auto">
-      <WithAnimation
+    <motion.div className="w-full bg-gradient-to-r from-violet-200 to-fuchsia-400">
+      {/* <WithAnimation
         initialX={0}
         visibleX={0}
         duration={0.2}
@@ -17,14 +17,14 @@ function HomePage() {
         initialScale={1}
         visibleScale={1}
         width={"100%"}
-        height={"100%"}      >
+        height={0}      >
         {" "}
         <Image
           src={ClaridgeEnter}
           alt={""}
           className="w-full lg:h-96 rounded-md"
         />
-      </WithAnimation>
+      </WithAnimation> */}
     </motion.div>
   );
 }

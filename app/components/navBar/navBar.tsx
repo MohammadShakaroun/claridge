@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -46,7 +45,7 @@ const Navbar: React.FC = () => {
                     Annual Report
                   </li>
                 </Link>
-                <Link href={"annoucement"}>
+                <Link href={"/annoucement"}>
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Announcements
                   </li>

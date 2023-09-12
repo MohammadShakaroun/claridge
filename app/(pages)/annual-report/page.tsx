@@ -6,7 +6,7 @@ import Footer from "@/app/components/footer/footer"
 
 function Report() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 ">
+    <div className="w-full bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 ">
     <Navbar />
     <Reports />
     <Footer />
