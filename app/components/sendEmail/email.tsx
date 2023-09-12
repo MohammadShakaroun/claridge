@@ -41,7 +41,7 @@ const Email = () => {
       className=' text-black py-6 flex flex-col w-full'
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 1.5 }}
+      transition={{ duration: 1.5, delay: 1.5 }}
     >
       <form ref={formRef} onSubmit={sendEmail}>
         <div className='container mx-auto flex flex-col items-end justify-end'>

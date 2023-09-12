@@ -19,7 +19,7 @@ const HomeContent = () => {
           <WithAnimation
             initialX={"-100vw"}
             visibleX={0}
-            duration={0.8}
+            duration={1.5}
             delay={0.1}
             width={"100%"}
             initialScale={0}
@@ -32,34 +32,58 @@ const HomeContent = () => {
               Country of incorporation
             </h2>
             <p className="mt-5 lg:w-4/5 text-black justify-end lg:mt-10 mx-auto text-center">
-            
                 The Company was incorporated with its seat in Cyprus as a public
                 limited liability company in accordance with the provisions of
                 the Companies Law, Chapter 113. The Company is registered on the
                 Cyprus Stock Exchange in accordance with the Securities and
                 Cyprus Stock Exchange Laws and Regulations. Its registered
                 office is at 10 Georgiou Gennadiou Street, Limassol.
-            
             </p>
           </WithAnimation>
         </motion.div>
         <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
-          <Image
+        <WithAnimation
+            initialX={"-100vh"}
+            visibleX={0}
+            duration={1.5}
+            delay={0.1}
+            width={"100%"}
+            initialScale={0}
+            visibleScale={1}
+            initialY={0}
+            visibleY={1}
+            height={undefined}
+          >
+            <Image
             className="rounded-full lg:w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={ClaridgeImg}
           />
+          </WithAnimation>
         </motion.div>
       </motion.div>
       <motion.div className="flex md:flex-row flex-col-reverse w-full items-center justify-center mx-auto">
         <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
-          <Image
+        <WithAnimation
+            initialX={"100vh"}
+            visibleX={0}
+            duration={1.5}
+            delay={0.1}
+            width={"100%"}
+            initialScale={0}
+            visibleScale={1}
+            initialY={0}
+            visibleY={1}
+            height={undefined}
+          >
+            <Image
             className=" rounded-full lg:w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={ClaridgeWhite}
           />
+          </WithAnimation>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -71,7 +95,7 @@ const HomeContent = () => {
           <WithAnimation
             initialX={"100vw"}
             visibleX={0}
-            duration={0.8}
+            duration={1.5}
             delay={0.1}
             width={"100%"}
             initialScale={0}

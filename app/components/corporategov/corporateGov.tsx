@@ -43,22 +43,46 @@ const CorporteGov = () => {
           </WithAnimation>
         </motion.div>
         <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
-          <Image
+        <WithAnimation
+            initialX={"100vw"}
+            visibleX={0}
+            duration={2}
+            delay={0.4}
+            width={"100%"}
+            initialScale={0}
+            visibleScale={1}
+            initialY={0}
+            visibleY={1}
+            height={undefined}
+          ><Image
             className="rounded-2xl lg:w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={CorporateMeeting}
           />
+          </WithAnimation>
         </motion.div>
       </motion.div>
       <motion.div className="flex md:flex-row flex-col-reverse w-full items-center justify-center mx-auto">
         <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
-          <Image
+        <WithAnimation
+            initialX={"-100vw"}
+            visibleX={0}
+            duration={2}
+            delay={0.4}
+            width={"100%"}
+            initialScale={0}
+            visibleScale={1}
+            initialY={0}
+            visibleY={1}
+            height={undefined}
+          ><Image
             className="rounded-2xl md:w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={CorporateGov}
           />
+          </WithAnimation>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -119,22 +143,46 @@ const CorporteGov = () => {
           </WithAnimation>
         </motion.div>
         <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
-          <Image
+        <WithAnimation
+            initialX={"100vw"}
+            visibleX={0}
+            duration={2}
+            delay={0.4}
+            width={"100%"}
+            initialScale={0}
+            visibleScale={1}
+            initialY={0}
+            visibleY={1}
+            height={undefined}
+          ><Image
             className="rounded-2xl md:w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={Council}
           />
+          </WithAnimation>
         </motion.div>
       </motion.div>
       <motion.div className="flex md:flex-row flex-col-reverse w-full items-center justify-center mx-auto">
         <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
-          <Image
+        <WithAnimation
+            initialX={"-100vw"}
+            visibleX={0}
+            duration={2}
+            delay={0.4}
+            width={"100%"}
+            initialScale={0}
+            visibleScale={1}
+            initialY={0}
+            visibleY={1}
+            height={undefined}
+          ><Image
             className="rounded-2xl w-3/4 mx-auto"
             objectFit="cover"
             alt=""
             src={BoardOfDirectors}
           />
+          </WithAnimation>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

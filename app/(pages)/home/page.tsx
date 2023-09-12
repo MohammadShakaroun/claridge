@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Footer from "@/app/components/footer/footer";
 import Image from "next/image";
 import { WithAnimation } from "@/app/components/withAnimationComponents/withAnimation";
-import ClaridgeEnter from "@/app/images/claridgeenter.jpg"
+import ClaridgeHotels from "@/app/images/claridgehotels.jpg"
 
 function Home() {
   return (
@@ -16,8 +16,8 @@ function Home() {
         <WithAnimation
           initialX={0}
           visibleX={0.5}
-          duration={0.2}
-          delay={0.3}
+          duration={1}
+          delay={0}
           initialY={"50vh"}
           visibleY={0}
           initialScale={1}
@@ -26,7 +26,7 @@ function Home() {
           height={undefined}
         >
           <Image
-            src={ClaridgeEnter}
+            src={ClaridgeHotels}
             alt={""}
             className="w-full lg:h-96 rounded-md"
           />

@@ -40,17 +40,17 @@ const Navbar: React.FC = () => {
           {isDropdownOpen && (
             <motion.div className="relative right-0 mt-2 py-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg z-40">
               <ul>
-                <Link href={"/annual-report"}>
+                <Link href={"./annual-report"}>
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Annual Report
                   </li>
                 </Link>
-                <Link href={"/annoucement"}>
+                <Link href={"./annoucement"}>
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Announcements
                   </li>
                 </Link>
-                <Link href={"/interim-annoucement"}>
+                <Link href={"./interim-annoucement"}>
                   <li className="hover:bg-gray-400 px-4 py-2 text-black">
                     Interim Announcements
                   </li>
@@ -59,12 +59,12 @@ const Navbar: React.FC = () => {
             </motion.div>
           )}
         </motion.div>
-        <Link href={"/general-info"} className="md:border-2 p-2 border-white rounded-md">
+        <Link href={"./general-info"} className="md:border-2 p-2 border-white rounded-md">
           <motion.div className="text-white md:text-xl hover:text-slate-300">
             General Info
           </motion.div>
         </Link>
-        <Link href={"/corporate-gov"} className="md:border-2 p-2 border-white rounded-md">
+        <Link href={"./corporate-gov"} className="md:border-2 p-2 border-white rounded-md">
           <motion.div className="text-white md:text-xl hover:text-slate-300">
             Corporate Governance
           </motion.div>

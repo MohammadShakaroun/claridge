@@ -7,7 +7,7 @@ function InterimAnnoucement() {
   return (
      <motion.div className="flex flex-col w-full h-96 bg-gradient-to-r from-sky-400 to-fuchsia-500">
       <motion.h1 className="text-center text-4xl font-extrabold p-10">
-        Annual report
+      Interim Announcements
       </motion.h1>
       <motion.div className="flex-row md:flex-col justify-between items-start w-full mt-8 text-center">
         <motion.div

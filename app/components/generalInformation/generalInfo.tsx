@@ -19,7 +19,7 @@ const GeneralInfos = () => {
           <WithAnimation
             initialX={"-100vw"}
             visibleX={0}
-            duration={0.8}
+            duration={1.5}
             delay={0.1}
             width={"100%"}
             initialScale={0}
@@ -38,7 +38,6 @@ const GeneralInfos = () => {
               <br />
               <span className="text-2xl font-semibold">DIRECTORS:</span>
               <br />
-              <div className="text-left mx-auto lg:pl-20">
                 Vasiliou Andreas - DIRECTOR <br />
                 Laniti Tzoanna - DIRECTOR <br />
                 Lanitis Platon E. - DIRECTOR <br />
@@ -46,27 +45,52 @@ const GeneralInfos = () => {
                 Solomonides Demetris - DIRECTOR <br />
                 Charitou Costas - DIRECTOR <br />
                 Hadjikyriacos Michalis - DIRECTOR <br />
-              </div>
             </p>
           </WithAnimation>
         </motion.div>
         <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
-          <Image
-            className="rounded-2xl lg:w-3/4 mx-auto"
-            objectFit="cover"
-            alt=""
-            src={ClaridgeDirector}
-          />
+          <WithAnimation
+            initialX={"100vh"}
+            visibleX={0}
+            duration={1.5}
+            delay={0.1}
+            width={"100%"}
+            initialScale={0}
+            visibleScale={1}
+            initialY={0}
+            visibleY={1}
+            height={undefined}
+          >
+            <Image
+              className="rounded-2xl lg:w-3/4 mx-auto"
+              objectFit="cover"
+              alt=""
+              src={ClaridgeDirector}
+            />
+          </WithAnimation>
         </motion.div>
       </motion.div>
       <motion.div className="flex md:flex-row flex-col-reverse w-full items-center justify-center mx-auto">
         <motion.div className="flex flex-row md:w-1/2 items-center justify-center">
-          <Image
-            className=" rounded-2xl lg:w-3/4 mx-auto"
-            objectFit="cover"
-            alt=""
-            src={ClaridgeFlair}
-          />
+          <WithAnimation
+            initialX={"100vh"}
+            visibleX={0}
+            duration={1.5}
+            delay={0.1}
+            width={"100%"}
+            initialScale={0}
+            visibleScale={1}
+            initialY={0}
+            visibleY={1}
+            height={undefined}
+          >
+            <Image
+              className=" rounded-2xl lg:w-3/4 mx-auto"
+              objectFit="cover"
+              alt=""
+              src={ClaridgeFlair}
+            />
+          </WithAnimation>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -76,9 +100,9 @@ const GeneralInfos = () => {
           className=" p-4 shadow-sm md:w-1/2 items-center justify-center"
         >
           <WithAnimation
-            initialX={"100vw"}
+            initialX={"-100vw"}
             visibleX={0}
-            duration={0.8}
+            duration={1.5}
             delay={0.1}
             width={"100%"}
             initialScale={0}

@@ -15,7 +15,7 @@ function Gov() {
         visibleX={0.5}
         duration={0.2}
         delay={0.3}
-        initialY={"-50vh"}
+        initialY={0}
         visibleY={0}
         initialScale={1}
         visibleScale={1}
@@ -24,7 +24,7 @@ function Gov() {
         <Image 
         src={CorporateImg}
         alt={""}
-        className="w-full rounded-md"
+        className="w-full h-80 rounded-md"
         />
       </WithAnimation>
      <CorporateGov />

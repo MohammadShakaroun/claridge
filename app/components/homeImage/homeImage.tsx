@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Image from "next/image";
-import ClaridgeEnter from "../../images/claridgeenter.jpg";
-import { WithAnimation } from "../withAnimationComponents/withAnimation";
 
 function HomePage() {
   return (
