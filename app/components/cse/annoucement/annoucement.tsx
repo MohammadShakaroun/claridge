@@ -7,7 +7,7 @@ function Annoucements() {
 
   return (
     <motion.div className="flex flex-col w-full h-auto bg-gradient-to-r from-sky-400 to-fuchsia-500">
-      <motion.h1 className="text-left text-4xl font-extrabold p-5">
+      <motion.h1 className="text-center text-4xl font-extrabold p-5">
         Announcements
       </motion.h1>
       <h4 className="text-2xl text-red-900 font-semibold pl-5">
