@@ -7,10 +7,12 @@ import Image from "next/image"
 import { WithAnimation } from "./components/withAnimationComponents/withAnimation"
 import { motion } from "framer-motion"
 import MainClaridge from "@/app/images/mainclaridge.jpg"
+import AnimateRoute from "./components/animateRoutes/animateRoute"
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col bg-gradient-to-r from-cyan-100 to-blue-300">
+     <AnimateRoute />
      <NavBar />
      <motion.div className="w-full bg-gradient-to-r from-cyan-100 to-blue-300 items-center justify-center mx-auto">
         <WithAnimation
