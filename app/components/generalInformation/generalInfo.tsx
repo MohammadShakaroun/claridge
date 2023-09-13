@@ -7,7 +7,7 @@ import ClaridgeFlair from "../../images/Claridgesflair.jpg";
 
 const GeneralInfos = () => {
   return (
-    <motion.div className="m-8">
+    <motion.div className="m-8 bg-gradient-to-r from-blue-100 to-blue-400">
       <motion.div className="flex md:flex-row flex-col w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

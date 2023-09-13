@@ -3,7 +3,7 @@ import React from "react";
 
 function HomePage() {
   return (
-    <motion.div className="w-full bg-gradient-to-r from-violet-200 to-fuchsia-400">
+    <motion.div className="w-full bg-gradient-to-r from-blue-100 to-blue-400">
       {/* <WithAnimation
         initialX={0}
         visibleX={0}
