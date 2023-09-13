@@ -6,7 +6,7 @@ function AnnualReport() {
   const mainControls = useAnimation();
 
   return (
-    <motion.div className="w-full h-96 bg-gradient-to-r from-sky-400 to-fuchsia-500">
+    <motion.div className="w-full h-96  bg-gradient-to-r from-cyan-100 to-blue-300">
       <motion.h1 className="text-center text-4xl font-extrabold p-10">
         Annual Reports
       </motion.h1>

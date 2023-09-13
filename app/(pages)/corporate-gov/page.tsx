@@ -6,10 +6,11 @@ import NavBar from "@/app/components/navBar/navBar"
 import Footer from "@/app/components/footer/footer"
 import CorporateImg from "../../images/129794890.jpg"
 import { WithAnimation } from "@/app/components/withAnimationComponents/withAnimation"
-
+import AnimatedRoute from "@/app/components/animateRoutes/animateRoute"
 function Gov() {
   return (
-    <div className="bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 ">
+    <div className="bg-gradient-to-r from-blue-100 to-blue-400">
+    <AnimatedRoute />
      <NavBar />
       <WithAnimation  initialX={0}
         visibleX={0.5}

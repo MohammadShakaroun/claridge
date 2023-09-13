@@ -7,12 +7,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import GeneralImage from "../../images/claridgesTree.jpg";
 import { WithAnimation } from "@/app/components/withAnimationComponents/withAnimation";
+import AnimatedRoute from "@/app/components/animateRoutes/animateRoute";
 
 function GeneralInfos() {
   return (
-    <div className="bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400">
+    <div className="bg-gradient-to-r from-blue-100 to-blue-400">
+    <AnimatedRoute />
       <Navbar />
-      <motion.div className="w-full bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 items-center justify-center mx-auto">
+      <motion.div className="w-full bg-gradient-to-r from-blue-100 to-blue-400 items-center justify-center mx-auto">
         <WithAnimation
           initialX={0}
           visibleX={0.5}

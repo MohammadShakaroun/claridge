@@ -10,9 +10,9 @@ import MainClaridge from "@/app/images/mainclaridge.jpg"
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 ">
+    <main className="min-h-screen flex flex-col bg-gradient-to-r from-cyan-100 to-blue-300">
      <NavBar />
-     <motion.div className="w-full bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 items-center justify-center mx-auto">
+     <motion.div className="w-full bg-gradient-to-r from-cyan-100 to-blue-300 items-center justify-center mx-auto">
         <WithAnimation
           initialX={0}
           visibleX={0.5}

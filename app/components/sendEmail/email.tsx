@@ -57,7 +57,7 @@ const Email = () => {
             <button
               disabled={isLoading}
               type='submit'
-              className=' text-secondary border border-gray-300 hover:text-white mx-2 px-4 py-1 rounded hover:bg-primary transition duration-300'
+              className=' text-white border border-gray-700 hover:text-white mx-2 px-4 py-1 rounded hover:bg-primary transition duration-300'
             >
               Subscribe
             </button>

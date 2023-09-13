@@ -7,12 +7,14 @@ import Footer from "@/app/components/footer/footer";
 import Image from "next/image";
 import { WithAnimation } from "@/app/components/withAnimationComponents/withAnimation";
 import ClaridgeHotels from "@/app/images/claridgehotels.jpg"
+import AnimatedRoute from "@/app/components/animateRoutes/animateRoute";
 
 function Home() {
   return (
-    <motion.div className="w-full h-screen bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400">
+    <motion.div className="w-full h-screen bg-gradient-to-r from-blue-100 to-blue-400">
+    <AnimatedRoute />
     <Navbar />
-    <motion.div className="w-full bg-gradient-to-r from-indigo-100 via-sky-300 to-pink-400 items-center justify-center mx-auto">
+    <motion.div className="w-full bg-gradient-to-r from-blue-100 to-blue-400 items-center justify-center mx-auto">
         <WithAnimation
           initialX={0}
           visibleX={0.5}
