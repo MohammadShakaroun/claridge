@@ -6,14 +6,14 @@ function Annoucements() {
   const mainControls = useAnimation();
 
   return (
-    <motion.div className="flex flex-col w-full h-auto bg-gradient-to-r from-cyan-100 to-blue-300">
+    <motion.div className="flex flex-col w-full h-auto bg-gradient-to-r from-cyan-100 to-blue-300 text-blue-900">
       <motion.h1 className="text-center text-4xl font-extrabold p-5">
         Announcements
       </motion.h1>
       <h4 className="text-2xl text-red-900 font-semibold pl-5">
         Announcements 2021
       </h4>
-      <motion.div className="flex-row md:flex-col justify-between items-start w-full mt-8 text-center text-black">
+      <motion.div className="flex-row md:flex-col justify-between items-start w-full mt-8 text-center text-blue-900">
         <motion.div
           className="text-left text-black justify-center mx-auto ml-4"
           variants={{

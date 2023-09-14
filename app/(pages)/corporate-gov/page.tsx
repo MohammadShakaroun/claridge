@@ -25,7 +25,7 @@ function Gov() {
         <Image 
         src={CorporateImg}
         alt={""}
-        className="w-full h-80"
+        className="w-full h-96"
         />
       </WithAnimation>
      <CorporateGov />

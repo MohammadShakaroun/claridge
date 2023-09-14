@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-sky-900 p-4 relative w-full h-24">
       <motion.div className="flex justify-center items-center sm:gap-4 xl:gap-20 gap-2 w-full">
-        <Link href={"/home"} className="hidden sm:block md:border-2 p-2 border-white rounded-md">
+        <Link href={"/"} className="hidden sm:block md:border-2 p-2 border-white rounded-md">
           <motion.div className=" w-16 cursor-pointer">
             {/* <motion.div className="items-center justify-center flex-row mx-auto">Claridge</motion.div> */}
             <Image src={ClaridgeLogo} alt={""} className="rounded-xl" />

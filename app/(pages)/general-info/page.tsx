@@ -30,7 +30,7 @@ function GeneralInfos() {
           <Image
             src={GeneralImage}
             alt={""}
-            className="w-full lg:h-2/5"
+            className="w-full lg:h-screen"
           />
         </WithAnimation>
       </motion.div>
