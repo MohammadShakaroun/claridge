@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation} from "framer-motion";
 import Link from "next/link";
 
 function Annoucements() {
